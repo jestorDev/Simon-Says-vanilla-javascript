@@ -6,37 +6,54 @@ html,body { height:100%; }
 body{
     background-color: hsl(var(--hueNumber),100%, 30%);
     height: 100%;
-    display: grid;
-    grid-template-rows: 20% auto 20%;
-    grid-template-columns: 20% auto 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 #buttonsContainer{
-    border-radius: 50%;
-    grid-column: 2 / 3 ;
-    grid-row: 2 / 3;
-    background-color: hsl(var(--hueNumber), 20%,10%);
+    height: 500px;
+    width: 500px;
+    background-color: hsl(var(--hueNumber), 100%,50%);
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
 
 .gameButton{
     border:none;
+    color: black;
+    font-size: 80px;
 }
 
-#btn1{
+#btn0{
     background-color: hsl(var(--hueNumber), 90%, 75% );
 }
-#btn2{
+#btn1{
     background-color: hsl(var(--hueNumber), 90%, 80%);
 }
-#btn3{
+#btn2{
     background-color: hsl(var(--hueNumber), 90%, 85%);    
 }
-#btn4{
+#btn3{
     background-color: hsl(var(--hueNumber), 90%, 90%);
 }
+
+#btn0:hover{
+    opacity:0.5;
+}
+#btn1:hover{
+    opacity:0.5;
+}
+#btn2:hover{
+    opacity:0.5;
+}
+#btn3:hover{
+    opacity:0.5;
+}
+
 .glow{
-     
-    background-color: white !important;
+    background-color: #f2f2f2 !important;
+}
+.dark{
+    background-color: #2f2f2f !important;
 }
