@@ -1,0 +1,42 @@
+:root{
+    --hueNumber: 12;
+}
+html,body { height:100%; }
+
+body{
+    background-color: hsl(var(--hueNumber),100%, 30%);
+    height: 100%;
+    display: grid;
+    grid-template-rows: 20% auto 20%;
+    grid-template-columns: 20% auto 20%;
+}
+
+#buttonsContainer{
+    border-radius: 50%;
+    grid-column: 2 / 3 ;
+    grid-row: 2 / 3;
+    background-color: hsl(var(--hueNumber), 20%,10%);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.gameButton{
+    border:none;
+}
+
+#btn1{
+    background-color: hsl(var(--hueNumber), 90%, 75% );
+}
+#btn2{
+    background-color: hsl(var(--hueNumber), 90%, 80%);
+}
+#btn3{
+    background-color: hsl(var(--hueNumber), 90%, 85%);    
+}
+#btn4{
+    background-color: hsl(var(--hueNumber), 90%, 90%);
+}
+.glow{
+     
+    background-color: white !important;
+}
