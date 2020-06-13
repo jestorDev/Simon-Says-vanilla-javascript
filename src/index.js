@@ -27,7 +27,7 @@ class SimonSays {
   addButtonEvents() {
     for (let i = 0; i < this.buttons.length; i++)
       this.buttons[i].addEventListener("click", (event) => {
-        // clicked == ?
+        // clicked == hit(th) element ?
         if (i == this.selectedNumbers[this.hits]) this.hits++;
         else this.userLose();
         // player arrive to last element
