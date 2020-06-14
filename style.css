@@ -1,7 +1,8 @@
 :root{
     --hueNumber: 0;
 }
-html,body {height:100%;
+html,body {
+    height:100%;
 }
 
 body{
@@ -22,6 +23,7 @@ body{
 .gameButton{
     border:none;
     color: black;
+    font-family: 'Ubuntu' , sans-serif  ;
     font-size: 120px;
 }
 
